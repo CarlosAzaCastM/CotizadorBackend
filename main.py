@@ -46,7 +46,7 @@ app = FastAPI(title="API Cotizador Herrajes")
 # Configuración de CORS para permitir peticiones desde tu React (Vite usa el puerto 5173)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"], 
+    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173", "https://cotizador-frontend-blush.vercel.app"], 
     allow_credentials=True,
     allow_methods=["*"], # Permite GET, POST, PUT, DELETE, etc.
     allow_headers=["*"],
